@@ -98,7 +98,7 @@
     {% block navbar %}
         <nav class="navbar navbar-expand navbar-dark bg-primary sticky-top d-print-none">
             {% block navbarContent %}
-                <a class="navbar-brand text-capitalize d-none d-sm-inline" href="{{ asset(fsc.user.homepage) }}"
+                <a class="navbar-brand text-capitalize d-none d-sm-inline ms-3" href="{{ asset(fsc.user.homepage) }}"
                    title="{{ trans('homepage') }}">
                     <i class="fa-solid fa-folder-open"></i>
                     <span class="d-none d-xl-inline">{{ fsc.empresa.nombrecorto | raw }}</span>
@@ -110,7 +110,7 @@
                             {{ macros.showMenu(menuItem) }}
                         {% endfor %}
                     </ul>
-                    <ul class="navbar-nav flex-row ml-auto">
+                    <ul class="navbar-nav flex-row ms-auto">
                         {% block navbarMenuIcon %}
                             {% for item in getIncludeViews('MenuTemplate', 'MenuIconBefore') %}
                                 {% include item['path'] %}

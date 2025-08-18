@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "bootswatch": "5"
+    "bootswatch": "^5"
   }
 }
